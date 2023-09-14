@@ -1,0 +1,820 @@
+/*  */
+.bodyContents .titBox{
+	position: relative;
+}
+
+.bodyContents .titBox h2{
+	margin-bottom: 0px;
+}
+
+/* bbsListBox */
+.bbsTable,
+.bbsTable th,
+.bbsTable td{
+	border-collapse: collapse;
+}
+
+.bbsTable{
+	width: 100%;
+}
+
+.bbsTable th{
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	background: #f7f7f7;
+	padding: 20px 0;
+}
+
+.bbsTable td{
+	padding: 20px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.bbsTable td.num,
+.bbsTable td.writer,
+.bbsTable td.date{
+	text-align: center;
+}
+
+.bbsTable td.subject{
+	text-align: left;
+}
+
+.bbsTable td.subject h3{
+	font-size: 16px;
+}
+
+.bbsTable tr.highlight td.subject h3{
+	color: var(--pCol) !important;
+}
+
+.bbsTable td.subject h3:hover{
+	text-decoration: underline;
+}
+
+.bbsTable td.writer{
+	font-weight: 600;
+} 
+
+.bbsTable td .block{
+	display: inline-block;
+	background: var(--pCol);
+	color: #fff;
+	font-size: 14px;
+	padding: 6px 10px 8px;
+	border-radius: 5px;
+}
+
+/* bbsBottom */
+.bbsBottom{
+	margin-top: 50px;
+	position: relative;
+}
+
+.bbsListBox .bbsBottom{
+	display: flex;
+	justify-content: center;
+}
+
+.bbsViewBox .bbsBottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bbsBottom .pagerBox{
+	display: flex;
+	align-items: center;
+}
+
+.bbsBottom .pagerBox .pagerLink{
+	display: flex;
+	margin-left: 5px;
+}
+
+.bbsBottom .pagerBox .pagerLink a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #999;
+	font-weight: 500;
+	text-align: center;
+	background: #f0f0f0;
+	margin-right: 5px;
+}
+
+.bbsBottom .pagerBox .pagerLink a.on{
+	background: var(--pCol);
+	color: #fff;
+}
+
+.bbsBottom .bbsBtn{
+	display: flex;
+}
+
+.bbsListBox .bbsBottom .bbsBtn{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0,-50%);
+}
+
+.bbsBottom .bbsBtn a{
+	display: block;
+	width: 160px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	background: #999;
+	margin-left: 10px;
+}
+
+.bbsBottom .bbsBtn a.writeBtn{
+	background: var(--pCol);
+}
+
+/* searchBox */
+.searchBox{
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.searchBox select{
+	width: 15%;
+	border: 0;
+	box-sizing: border-box;
+	background: #f0f3f5;
+	height: 45px;
+	padding: 0 10px;
+}
+
+.searchBox input{
+	width: 68%;
+	border: 0;
+	box-sizing: border-box;
+	background: #f0f3f5;
+	height: 45px;
+	padding: 0 10px;
+}
+
+.searchBox .searchBtn{
+	width: 15%;
+	border: 0;
+	box-sizing: border-box;
+	background: var(--pCol);
+	color: #fff;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* 상세보기 페이지 */
+.fileBox h5{
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.fileBox a{
+	display: flex;
+	font-size: 14px;
+}
+
+.fileBox a:hover{
+	text-decoration: underline;
+}
+
+.fileBox a img{
+	width: 14px;
+	margin-right: 5px;
+}
+
+.bbsCon{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.bbsCon td{
+	padding: 20px 30px;
+	line-height: 1.6;
+}
+
+.bbsCon img{
+	max-width: 100%;
+}
+
+.setBtn{
+	display: flex;
+}
+
+.setBtn a{
+	display: block;
+	width: 160px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	background: var(--pCol);
+	margin-left: 10px;
+}
+
+.setBtn a:first-child{
+	margin-left: 0;
+}
+
+.replyDiv{
+	margin-top: 30px;
+}
+
+.replyDiv .replyTit{
+	font-size: 18px;
+	font-weight: 500;
+	/* background: var(--mainCol); */
+	border: 1px solid #ddd;
+	padding: 15px 15px;
+	box-sizing: border-box;
+	/* color: #fff; */
+	line-height: 1;
+	position: relative;
+	cursor: pointer;
+}
+
+.replyDiv .replyTit::after{
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #999;
+	border-right: 2px solid #999;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translate(0,-75%) rotate(135deg);
+	transition: all 0.3s;
+}
+
+.replyDiv.off .replyTit::after{
+	transform: translate(0,-25%) rotate(-45deg);
+}
+
+.replyDiv .replyTit span{
+	font-size: 0.9em;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.replyDiv .reUl{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.replyDiv .reUl .reLi{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.replyDiv .reUl .reLi:last-child{
+	margin-bottom: 0;
+}
+
+.replyDiv .reUl .reLi p{
+	font-size: 14px;
+}
+
+.replyDiv .reUl .reLi .reName{
+	font-weight: 500;
+	width: 10%;
+	line-height: 1.5;
+}
+
+.replyDiv .reUl .reLi .reTxt{
+	width: calc(100% - 10% - 10% - 30px);
+	line-height: 1.5;
+}
+
+.replyDiv .reUl .reLi .reDate{
+	width: 10%;
+	color: #999;
+	line-height: 1.5;
+	text-align: right;
+}
+
+.replyDiv .reUl .reLi .reBtn{
+	width: 30px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.replyDiv .reUl .reLi .reBtn .icon{
+	display: block;
+	width: 2px;
+}
+
+.replyDiv .reUl .reLi .reBtn .icon span{
+	display: block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background: #999;
+	margin: 2px 0;
+}
+
+.replyDiv .reUl .reLi .reBtn ul{
+	position: absolute;
+	top: 0%;
+	right: 10px;
+	width: 70px;
+	transform: translate(0,0%);
+	display: none;
+	z-index: 4;
+}
+
+.replyDiv .reUl .reLi .reBtn ul::after{
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: #666;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	transform: translate(50%,0) rotate(45deg);
+}
+
+.replyDiv .reUl .reLi .reBtn ul li a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	background: #666;
+	font-size: 12px;
+	border-bottom: 1px solid #888;
+}
+
+.replyDiv .reUl .reLi .reBtn ul li a:hover{
+	background: #777;
+}
+
+.replyForm{
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.replyForm textarea{
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 10px;
+	line-height: 1.4;
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.replyForm ul{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.replyForm ul li{
+	width: calc(100%/3 - 20px/3);
+}
+
+.replyForm ul li input{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	height: 40px;
+	line-height: 38px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.replyForm ul li a.replyOk{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: var(--pCol);
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}
+
+/* 글 작성하기 */
+.formUl{
+	margin-top: 15px;
+}
+
+.formUl li{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.formUl li h5{
+	width: 100px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.formUl li .inputBox{
+	width: calc(100% - 100px);
+}
+
+.formUl li .inputBox input{
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	height: 40px;
+	line-height: 38px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.formUl li .inputBox textarea{
+	width: 100%;
+	height: 300px;
+	border: 1px solid #dfdfdf;
+	line-height: 1.5;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.bbsWriteBox .writeBtn{
+	display: block;
+	max-width: 180px;
+	height: 50px;
+	line-height: 50px;
+	background: var(--pCol);
+	color: #fff !important;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------- responsive 1000px */
+@media screen and (max-width: 1000px){
+
+/* bbsListBox */
+.bbsTable{
+	width: 100%;
+}
+
+.bbsTable th{
+	font-size: 3vw;
+	padding: 4vw 0;
+}
+
+.bbsTable td{
+	padding: 3.5vw 5px;
+	font-size: 2.5vw;
+}
+
+.bbsTable td.subject h3{
+	font-size: 3vw;
+	line-height: 1.2;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.bbsTable td .block{
+	font-size: 2.5vw;
+	padding: 1.5vw 2vw;
+}
+
+/* bbsBottom */
+.bbsBottom{
+	margin-top: 5vw;
+	position: relative;
+}
+
+.bbsListBox .bbsBottom{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bbsViewBox .bbsBottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bbsBottom .pagerBox{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5vw;
+}
+
+.bbsBottom .pagerBox .pagerPrev,
+.bbsBottom .pagerBox .pagerNext{
+	width: 5vw;
+}
+
+.bbsBottom .pagerBox .pagerPrev img,
+.bbsBottom .pagerBox .pagerNext img{
+	width: 100%;
+}
+
+.bbsBottom .pagerBox .pagerLink{
+	display: flex;
+	margin-left: 5px;
+}
+
+.bbsBottom .pagerBox .pagerLink a{
+	display: block;
+	width: 5vw;
+	height: 5vw;
+	line-height: 5vw;
+	font-size: 2.5vw;
+	color: #999;
+	font-weight: 500;
+	text-align: center;
+	background: #f0f0f0;
+	margin-right: 5px;
+}
+
+.bbsBottom .pagerBox .pagerLink a.on{
+	background: var(--pCol);
+	color: #fff;
+}
+
+.bbsBottom .bbsBtn{
+	display: flex;
+}
+
+.bbsListBox .bbsBottom .bbsBtn{
+	position: static;
+	top: auto;
+	right: autp;
+	transform: translate(0,0%);
+}
+
+.bbsBottom .bbsBtn a{
+	display: block;
+	width: 20vw;
+	height: 8vw;
+	line-height: 8vw;
+	font-size: 3vw;
+	margin-left: 10px;
+}
+
+.bbsBottom .bbsBtn a:nth-child(1){
+	margin-left: 0;
+}
+
+/* searchBox */
+.searchBox{
+	margin-top: 5vw;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.searchBox select{
+	width: 25%;
+	height: 10vw;
+	padding: 0 10px;
+	font-size: 3vw;
+}
+
+.searchBox input{
+	width: calc(75% - 2vw);
+	height: 10vw;
+	padding: 0 10px;
+	font-size: 3vw;
+	margin-left: 2vw;
+}
+
+.searchBox .searchBtn{
+	width: 100%;
+	height: 10vw;
+	line-height: 10vw;
+	font-size: 3vw;
+	margin-top: 3vw;
+}
+
+/* 상세보기 페이지 */
+.fileBox h5{
+	margin-bottom: 10px;
+	font-size: 2.5vw;
+}
+
+.fileBox a{
+	font-size: 2.5vw;
+}
+
+.fileBox a img{
+	width: 2.5vw;
+	margin-right: 3px;
+}
+
+.bbsCon td{
+	padding: 5vw;
+	line-height: 1.6;
+}
+
+.setBtn a{
+	width: 15vw;
+	height: 6vw;
+	line-height: 6vw;
+	font-size: 3vw;
+	margin-left: 10px;
+}
+
+.setBtn a:nth-child(1){
+	margin-left: 0;
+}
+
+.bbsViewBox .bbsBottom .bbsBtn a{
+	width: 15vw;
+	height: 6vw;
+	line-height: 6vw;
+	font-weight: 400;
+	font-size: 3vw;
+}
+
+.replyDiv{
+	margin-top: 5vw;
+}
+
+.replyDiv .replyTit{
+	font-size: 3vw;
+	padding: 3vw;
+}
+
+.replyDiv .replyTit::after{
+	width: 4px;
+	height: 4px;
+	right: 3vw;
+}
+
+.replyDiv .reUl{
+	padding: 3vw 3vw;
+}
+
+.replyDiv .reUl .reLi{
+	margin-bottom: 3vw;
+}
+
+.replyDiv .reUl .reLi p{
+	font-size: 2.5vw;
+}
+
+.replyDiv .reUl .reLi .reName{
+	width: 10vw;
+}
+
+.replyDiv .reUl .reLi .reTxt{
+	width: calc(100% - 10vw - 15vw - 30px);
+}
+
+.replyDiv .reUl .reLi .reDate{
+	width: 15vw;
+}
+
+.replyDiv .reUl .reLi .reBtn{
+	width: 30px;
+}
+
+.replyDiv .reUl .reLi .reBtn .icon{
+	width: 2px;
+}
+
+.replyDiv .reUl .reLi .reBtn .icon span{
+	width: 2px;
+	height: 2px;
+	margin: 2px 0;
+}
+
+.replyDiv .reUl .reLi .reBtn ul{
+	position: absolute;
+	top: 0%;
+	right: 10px;
+	width: 70px;
+	transform: translate(0,0%);
+	display: none;
+	z-index: 4;
+}
+
+.replyDiv .reUl .reLi .reBtn ul::after{
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: #666;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	transform: translate(50%,0) rotate(45deg);
+}
+
+.replyDiv .reUl .reLi .reBtn ul li a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	background: #666;
+	font-size: 12px;
+	border-bottom: 1px solid #888;
+}
+
+.replyForm{
+	padding-top: 1vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.replyForm textarea{
+	padding: 3vw;
+	height: 30vw;
+	margin-bottom: 1vw;
+	font-size: 2.5vw;
+}
+
+.replyForm ul li{
+	width: calc(100%/3 - 2vw/3);
+}
+
+.replyForm ul li input{
+	height: 8vw;
+	line-height: 8vw;
+	padding: 0 10px;
+	font-size: 2.5vw;
+}
+
+.replyForm ul li a.replyOk{
+	height: 8vw;
+	line-height: 8vw;
+	font-size: 2.5vw;
+}
+
+/* 글 작성하기 */
+.formUl{
+	margin-top: 3vw;
+}
+
+.formUl li{
+	margin-bottom: 1vw;
+}
+
+.formUl li h5{
+	width: 14vw;
+	font-size: 3vw;
+	line-height: 8vw;
+}
+
+.formUl li .inputBox{
+	width: calc(100% - 14vw);
+}
+
+.formUl li .inputBox input{
+	height: 8vw;
+	line-height: 8vw;
+	box-sizing: border-box;
+	padding-left: 10px;
+	font-size: 3vw;
+}
+
+.formUl li .inputBox textarea{
+	height: 40vw;
+	padding: 10px;
+	font-size: 3vw;
+}
+
+.bbsWriteBox .writeBtn{
+	display: block;
+	max-width: 180px;
+	width: 40%;
+	height: 10vw;
+	line-height: 10vw;
+	font-size: 3.5vw;
+	margin: 5vw auto 0;
+}
+
+}

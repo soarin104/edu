@@ -1,0 +1,228 @@
+/*  */
+.bodyContents .titBox{
+	position: relative;
+}
+
+.bodyContents .titBox h2{
+	margin-bottom: 0px;
+}
+
+.registerBtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 7px 15px;
+	border-radius: 100px;
+	background: var(--pCol);
+	color: #fff !important;
+	font-size: 16px;
+}
+
+/* bookBox */
+.bookBox ul li{
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.bookBox ul li .imgBox{
+	width: 186px;
+}
+
+.bookBox ul li .txtBox{
+	width: calc(100% - 186px - 70px);
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+
+.bookBox ul li .txtBox h3{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.bookBox ul li .txtBox h3 strong span{
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+.bookBox ul li .txtBox .listView{
+	display: inline-block;
+	font-size: 14px;
+	color: #fff !important;
+	background: #a7a7a7;
+	padding: 6px 14px 8px; 
+}
+
+.bookBox ul li label input{
+	display: none;
+}
+
+.bookBox ul li label span{
+	background: #a7a7a7;
+	color: #fff;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	width: 70px;
+	padding: 8px 15px;
+	border-radius: 8px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.bookBox ul li label span::before{
+	content: '선택하기';
+}
+
+.bookBox ul li label input:checked + span{
+	background: var(--pCol);
+}
+
+.bookBox ul li label input:checked + span::before{
+	content: '선택해제';
+}
+
+.pagerBox{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.pagerBox .pagerLink{
+	display: flex;
+	margin-left: 5px;
+}
+
+.pagerBox .pagerLink a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #999;
+	font-weight: 500;
+	text-align: center;
+	background: #f0f0f0;
+	margin-right: 5px;
+}
+
+.pagerBox .pagerLink a.on{
+	background: var(--pCol);
+	color: #fff;
+}
+
+.bookOk{
+	background: var(--pCol);
+	color: #fff !important;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	max-width: 250px;
+	height: 60px;
+	line-height: 60px;
+	margin: 50px auto 0;
+	display: block;
+	border-radius: 14px;
+}
+
+/* ---------------------------------------------------------------------------------- responsive 1000px */
+@media screen and (max-width: 1000px){
+
+/*  */
+.registerBtn{
+	display: none;
+}
+
+/* bookBox */
+.bookBox ul li{
+	padding: 5vw 0;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.bookBox ul li .imgBox{
+	width: 30%;
+	margin-bottom: 3vw;
+}
+
+.bookBox ul li .txtBox{
+	width: 70%;
+	padding: 0 5vw;
+}
+
+.bookBox ul li .txtBox h3{
+	font-size: 3vw;
+	margin-bottom: 1vw;
+}
+
+.bookBox ul li .txtBox .listView{
+	font-size: 2.5vw;
+	padding: 1vw 3vw; 
+}
+
+.bookBox ul li label{
+	margin-left: calc(30% + 5vw);
+	width: 30%;
+}
+
+.bookBox ul li label span{
+	font-size: 2.5vw;
+	width: 100%;
+	padding: 1.5vw 3vw;
+	border-radius: 8px;
+}
+
+.pagerBox{
+	display: flex;
+	align-items: center;
+	margin-top: 5vw;
+}
+
+.pagerBox .pagerPrev,
+.pagerBox .pagerNext{
+	width: 5vw;
+}
+
+.pagerBox .pagerPrev img,
+.pagerBox .pagerNext img{
+	width: 100%;
+}
+
+.pagerBox .pagerLink{
+	display: flex;
+	margin-left: 5px;
+}
+
+.pagerBox .pagerLink a{
+	display: block;
+	width: 5vw;
+	height: 5vw;
+	line-height: 5vw;
+	font-size: 2.5vw;
+	color: #999;
+	font-weight: 500;
+	text-align: center;
+	background: #f0f0f0;
+	margin-right: 5px;
+}
+
+.pagerBox .pagerLink a.on{
+	background: var(--pCol);
+	color: #fff;
+}
+
+.bookOk{
+	font-size: 4vw;
+	height: 12vw;
+	line-height: 12vw;
+	margin: 5vw auto 0;
+	border-radius: 3vw;
+}
+
+
+}

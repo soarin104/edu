@@ -1,0 +1,209 @@
+/*  */
+.bodyContents .titBox{
+	position: relative;
+}
+
+.bodyContents .titBox h2{
+	margin-bottom: 0px;
+}
+
+.registerBtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 7px 15px;
+	border-radius: 100px;
+	background: var(--pCol);
+	color: #fff !important;
+	font-size: 16px;
+}
+
+/* classBox */
+.classBox table,
+.classBox th,
+.classBox td{
+	border-collapse: collapse;
+}
+
+.classBox table{
+	width: 100%;
+}
+
+.classBox th{
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	background: #f7f7f7;
+	padding: 15px 0;
+}
+
+.classBox td{
+	padding: 10px 10px;
+}
+
+.classBox .borderTd{
+	border-bottom: 1px solid #ccc;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.classBox .spaceTd{
+	padding: 0 !important;
+}
+
+.classBox .block{
+	display: inline-block;
+	background: var(--pCol);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 7px 10px 8px;
+	border-radius: 3px;
+	line-height: 1;
+}
+
+.classBox .t2 h3,
+.classBox .t2 h3 a{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #333 !important;
+}
+
+.classBox .t1,
+.classBox .t3,
+.classBox .t4{
+	text-align: center;
+}
+
+.classBox .t3{
+	font-weight: 600;
+}
+
+.classBox .t5{
+	text-align: center;
+	line-height: 1.7;
+	color: #777;
+}
+
+.classBox .t5 strong{
+	color: #f30000;
+}
+
+.classBox .t5 strong span{
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+.classBox .t6 label{
+	font-size: 16px;
+	display: block;
+	line-height: 1.6;
+}
+
+.classOk{
+	background: var(--pCol);
+	color: #fff !important;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	max-width: 250px;
+	height: 60px;
+	line-height: 60px;
+	margin: 50px auto 0;
+	display: block;
+	border-radius: 14px;
+}
+
+
+/* ---------------------------------------------------------------------------------- responsive 1000px */
+@media screen and (max-width: 1000px){
+
+/*  */
+.registerBtn{
+	display: none;
+}
+
+/* classBox */
+.classBox table,
+.classBox th,
+.classBox td{
+	border-collapse: collapse;
+}
+
+.classBox table{
+	width: 100%;
+}
+
+.classBox th{
+	font-size: 3vw;
+	padding: 3vw 0;
+}
+
+.classBox td{
+	padding: 1vw 5px;
+	font-size: 2.5vw;
+}
+
+.classBox .block{
+	font-size: 2.5vw;
+	padding: 1vw 2vw;
+}
+
+.classBox .t2 h3,
+.classBox .t2 h3 a{
+	font-size: 2.5vw;
+	line-height: 1.4;
+}
+
+.classBox .t1,
+.classBox .t3,
+.classBox .t4{
+	text-align: center;
+}
+
+.classBox th:nth-child(4),
+.classBox .t4{
+	display: none;
+}
+
+.classBox .t3{
+	font-weight: 600;
+}
+
+.classBox .t5{
+	text-align: center;
+	line-height: 1.7;
+	color: #777;
+}
+
+.classBox .t5 strong{
+	color: #f30000;
+}
+
+.classBox .t5 strong span{
+	font-weight: 400;
+	font-size: 0.9em;
+}
+
+.classBox .t6 label{
+	font-size: 2.5vw;
+	display: flex;
+}
+
+.classBox .t6 label input{
+	width: 2vw;
+	margin-right: 3px;
+}
+
+.classOk{
+	font-size: 4vw;
+	height: 12vw;
+	line-height: 12vw;
+	margin: 5vw auto 0;
+	border-radius: 3vw;
+}
+
+
+}

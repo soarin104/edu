@@ -1,0 +1,1096 @@
+/* section */
+#contents section{
+	padding: 100px 0;
+}
+
+#contents section h2{
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #333;
+	/* font-family: 'Pretendard-Bold'; */
+}
+
+.tit{
+	text-align: center;
+	font-size: 38px !important;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.tit strong{
+	color: #666;
+}
+
+.tit span{
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* visual */
+.visual{
+	padding: 0 !important;
+}
+
+.visual img{
+	vertical-align: middle;
+	max-width: 100%;
+	width: 100%;
+}
+
+.visual .slideUl{
+	margin-bottom: 0 !important;
+}
+
+.visual .slideLi{
+	position: relative;
+}
+
+.visual .slideLi .txtBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 90%;
+	max-width: 1280px;
+}
+
+.visual .slideLi .txtBox h2{
+	font-weight: 400 !important;
+	font-size: 76px !important;
+	line-height: 1.4 !important;
+	margin-bottom: 30px;
+}
+
+.visual .slideLi .txtBox h2 span{
+	display: block;
+	font-size: 24px;
+}
+
+.visual .slideLi .txtBox p{
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.visual .slick-dots{
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.visual .slick-dots li{
+	display: block;
+	width: 50px;
+	height: 8px;
+	background: rgba(255,255,255,0.9);
+	position: relative;
+	transition: all 0.3s;
+}
+
+.visual .slick-dots li.slick-active{
+	background: var(--mainCol);
+}
+
+.visual .slick-dots li button{
+	opacity: 0 !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* youtubeBox */
+.youtubeBox{
+	padding: 80px 0 !important;
+}
+
+.youtubeBox h2{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.youtubeBox h2 span{
+	color: var(--mainCol);
+	font-weight: 700;
+	line-height: 1;
+	margin-left: 10px;
+	font-size: 30px;
+	letter-spacing: -1px;
+}
+
+.youtubeBox .slideUl{
+	margin: 0 -10px 50px;
+}
+
+.youtubeBox .slideLi{
+	/* width: 19%; */
+	margin: 0 10px;
+}
+
+.youtubeBox .slideLi .imgBox{
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.youtubeBox .slideLi .txtBox h5{
+	font-size: 15px;
+	line-height: 1.5;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.youtubeBox .slick-dots{
+	display: flex;
+	justify-content: center;
+	bottom: -40px;
+}
+
+.youtubeBox .slick-dots li{
+	display: block;
+	width: 50px;
+	height: 6px;
+	background: rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.youtubeBox .slick-dots li.slick-active{
+	background: var(--pCol);
+}
+
+.youtubeBox .slick-dots li button{
+	opacity: 0 !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* profileBox */
+.profileBox{
+	background: #f7f7f7;
+	padding: 0 !important;
+}
+
+.profileBox .inner{
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.profileBox .imgBox{
+	width: 403px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.profileBox .txtBox{
+	padding: 100px 0;
+	width: calc(100% - 453px);
+}
+
+.profileBox .txtBox h2{
+	font-size: 24px;
+	font-weight: 400 !important;
+}
+
+.profileBox .txtBox h2 strong{
+	font-weight: 600;
+	font-size: 50px;
+	display: block;
+}
+
+.profileBox .txtBox .infoBox{
+	background: #fff url(../img/infoBoxBg.png) no-repeat right 40px top 40px / auto;
+	box-sizing: border-box;
+	padding: 40px 40px 50px;
+	margin-top: 30px;
+}
+
+.profileBox .txtBox .infoBox h3{
+	color: #485967;
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.profileBox .txtBox .infoBox p{
+	font-size: 18px;
+	line-height: 2;
+	color: #888;
+}
+
+.profileBox .txtBox .linkBox{
+	display: flex;
+	justify-content: space-between;
+}
+
+.profileBox .txtBox .linkBox a{
+	width: calc(100%/4 - 45px/4);
+	margin-top: 15px;
+	background: #e1f1fd;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profileBox .txtBox .linkBox a span{
+	font-size: 14px;
+	font-weight: 500;
+	color: #444;
+	margin-left: 10px;
+}
+
+/* bbsBox */
+.bbsBox .inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bbsBox .inner article{
+	width: 45%;
+	border-top: 2px solid #303030;
+}
+
+.bbsBox .inner article h3{
+	font-size: 26px;
+	line-height: 1;
+	height: 75px;
+	line-height: 75px;
+}
+
+.bbsBox .inner article h3 a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bbsBox .inner article h3 .circle{
+	background: var(--mainCol);
+	display: block;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.bbsBox .inner article h3 .circle::before,
+.bbsBox .inner article h3 .circle::after{
+	content: '';
+	display: block;
+	width: 50%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.bbsBox .inner article h3 .circle::before{
+	transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.bbsBox .inner article ul li{
+	border-top: 1px solid #ccc;
+}
+
+.bbsBox .inner article ul li:last-child{
+	border-bottom: 1px solid #ccc;
+}
+
+.bbsBox .inner article ul li a{
+	display: flex;
+	padding: 15px 0;
+	justify-content: space-between;
+	transition: all 0.3s;
+}
+
+.bbsBox .inner article ul li a:hover{
+	background: #f1f1f1;
+}
+
+.bbsBox .inner article ul li .bbsTit{
+	width: calc(100% - 100px);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.bbsBox .inner article ul li .bbsDate{
+	width: 80px;
+	text-align: right;
+	font-size: 14px;
+}
+
+/* recomBox */
+.recomBox{
+	background: url(../img/recomBg.jpg) no-repeat center / cover;
+}
+
+.recomBox .slideUl{
+	margin: 0 -25px;
+	margin-bottom: 50px;
+}
+
+.recomBox .slideLi{
+	margin: 0 25px;
+	position: relative;
+}
+
+.recomBox .slideLi .recomIcon{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+}
+
+.recomBox .slideLi .imgBox{
+	width: 100%;
+}
+
+.recomBox .slideLi .imgBox img{
+	width: 100%;
+}
+
+.recomBox .slideLi .txtBox{
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px 30px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.recomBox .slideLi .txtBox h3{
+	font-size: 22px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.recomBox .slideLi .txtBox h4{
+	font-size: 18px;
+	margin: 15px 0 25px;
+	width: 100%;
+	font-weight: 500;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.recomBox .slideLi .txtBox ul{
+
+}
+
+.recomBox .slideLi .txtBox ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.recomBox .slideLi .txtBox ul li h5{
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: var(--mainCol);
+	font-size: 16px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.recomBox .slideLi .txtBox ul li p{
+	font-weight: 500;
+}
+
+.recomBox .slideLi .txtBox ul li p strong{
+	font-size: 1.2em;
+	color: var(--mainCol);
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.recomBox .slick-dots{
+	bottom: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.recomBox .slick-dots li{
+	float: inherit;
+	display: block;
+	width: 50px;
+	height: 6px;
+	background: #dcdcdc;
+	position: relative;
+	margin: 0 10px;
+	transition: all 0.3s;
+}
+
+.recomBox .slick-dots li.slick-active{
+	background: var(--mainCol);
+}
+
+.recomBox .slick-dots li button{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0 !important;
+}
+
+/* planBox */
+.planBox table,
+.planBox th,
+.planBox td{
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+
+.planBox table{
+	width: 100%;
+}
+
+.planBox th{
+	font-size: 18px;
+	background: #f7f7f7;
+	padding: 15px 10px;
+	vertical-align: middle;
+	font-weight: 500;
+}
+
+.planBox td{
+	padding: 15px 10px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.5;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+
+.planBox td:hover{
+	background: #f7f7f7;
+}
+
+.planBox td.paint{
+	background: var(--mainCol) !important;
+	color: #fff;
+}
+
+/* bookBox */
+.bookBox{
+	background: #f7f8f9;
+}
+
+.bookBox .slideUl{
+	margin: 0 -25px;
+	margin-bottom: 50px;
+}
+
+.bookBox .slideLi{
+	margin: 0 25px;
+	position: relative;
+}
+
+.bookBox .slideLi .recomIcon{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+}
+
+.bookBox .slideLi .imgBox{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.bookBox .slideLi .imgBox img{
+	width: 100%;
+}
+
+.bookBox .slideLi .txtBox h3{
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 10px;
+}
+
+.bookBox .slideLi .txtBox .price{
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+
+.bookBox .slideLi .txtBox .price .before{
+	color: #999;
+	text-decoration: line-through;
+}
+
+.bookBox .slideLi .txtBox .price .center{
+	font-size: 10px;
+	color: #999;
+	margin: 0 10px;
+}
+
+.bookBox .slideLi .txtBox .price .after{
+	color: #f30000;
+}
+
+.bookBox .slick-dots{
+	bottom: -40px;
+	display: flex;
+	justify-content: center;
+}
+
+.bookBox .slick-dots li{
+	float: inherit;
+	display: block;
+	width: 50px;
+	height: 6px;
+	background: #dcdcdc;
+	position: relative;
+	margin: 0 10px;
+	transition: all 0.3s;
+}
+
+.bookBox .slick-dots li.slick-active{
+	background: var(--mainCol);
+}
+
+.bookBox .slick-dots li button{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0 !important;
+}
+
+/* reviewBox */
+.reviewBox article .inBox{
+	background: #f6f9fb;
+	box-sizing: border-box;
+	padding: 50px 5%;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 30px;
+}
+
+.reviewBox article .inBox .reviewer{
+	max-width: 86px;
+	margin: auto;
+	font-size: 16px;
+}
+
+.reviewBox article .inBox .reviewer img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.reviewBox article .inBox .subject{
+	font-size: 24px;
+	margin: 15px 0;
+}
+
+.reviewBox article .inBox p{
+	line-height: 1.7;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+
+/* ----------------------------------------------------------------------------------responsive 1280px */
+@media screen and (max-width: 1280px){
+/* visual */
+.visual .slideLi .txtBox h2{
+	font-size: 40px !important;
+	margin-bottom: 20px;
+}
+
+.visual .slideLi .txtBox h2 span{
+	font-size: 18px;
+}
+
+.visual .slideLi .txtBox p{
+	font-size: 18px;
+}
+
+.visual .slick-dots{
+	bottom: 20px;
+}
+
+.visual .slick-dots li{
+	width: 30px;
+	height: 6px;
+}
+
+
+
+}
+/* ----------------------------------------------------------------------------------//responsive 1280px */
+
+/* ----------------------------------------------------------------------------------responsive 1000px */
+@media screen and (max-width: 1000px){
+/* section */
+#contents section{
+	padding: 12vw 0;
+}
+
+#contents section h2{
+	font-size: 5vw;
+	line-height: 1.2;
+}
+
+.tit{
+	text-align: center;
+	font-size: 6vw !important;
+	line-height: 1.5;
+	margin-bottom: 5vw;
+}
+
+.tit strong{
+	color: #666;
+}
+
+.tit span{
+	font-size: 3.5vw;
+	font-weight: 400;
+}
+
+/* visual */
+.visual img{
+	vertical-align: middle;
+	max-width: 100%;
+	width: 100%;
+}
+
+.visual .slideLi .txtBox{
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	width: 90%;
+	max-width: 1280px;
+}
+
+.visual .slideLi .txtBox h2{
+	font-size: 10vw !important;
+	margin-bottom: 3vw;
+}
+
+.visual .slideLi .txtBox h2 span{
+	font-size: 4vw;
+}
+
+.visual .slideLi .txtBox p{
+	font-size: 3.5vw;
+}
+
+.visual .slick-dots{
+	bottom: 5vw;
+}
+
+.visual .slick-dots li{
+	width: 8vw;
+	height: 6px;
+	background: rgba(255,255,255,0.9);
+}
+
+/* youtubeBox */
+.youtubeBox{
+	padding: 12vw 0 !important;
+}
+
+.youtubeBox h2{
+	margin-bottom: 5vw;
+}
+
+.youtubeBox h2 img{
+	width: auto;
+	height: 4vw;
+}
+
+.youtubeBox h2 span{
+	margin-left: 1vw;
+	font-size: 4vw;
+}
+
+.youtubeBox .slideUl{
+	margin: 0 -1vw 5vw !important;
+}
+
+.youtubeBox .slideLi{
+	margin: 0 1vw;
+}
+
+.youtubeBox .slideLi .txtBox h5{
+	font-size: 2.5vw;
+	line-height: 1.5;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.youtubeBox .slick-dots{
+	display: flex;
+	justify-content: center;
+	bottom: -5vw;
+}
+
+.youtubeBox .slick-dots li{
+	display: block;
+	width: 5vw;
+	height: 4px;
+	background: rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.youtubeBox .slick-dots li.slick-active{
+	background: var(--pCol);
+}
+
+.youtubeBox .slick-dots li button{
+	opacity: 0 !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* profileBox */
+.profileBox{
+	padding: 12vw 0 !important;
+}
+
+.profileBox .inner{
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.profileBox .imgBox{
+	width: 60%;
+	position: static;
+	left: auto;
+	bottom: auto;
+}
+
+.profileBox .txtBox{
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+
+.profileBox .txtBox h2{
+	font-size: 4vw !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(0,-100%);
+	padding-bottom: 5vw;
+	text-shadow: rgba(255,255,255,1) 0 0 1vw;
+}
+
+.profileBox .txtBox h2 strong{
+	font-size: 6vw;
+}
+
+.profileBox .txtBox .infoBox{
+	background: #fff url(../img/infoBoxBg.png) no-repeat right 5vw top 5vw / 15% auto;
+	padding: 5vw;
+	margin-top: 0px;
+}
+
+.profileBox .txtBox .infoBox h3{
+	font-size: 5vw;
+	margin-bottom: 2vw;
+}
+
+.profileBox .txtBox .infoBox p{
+	font-size: 3.5vw;
+}
+
+.profileBox .txtBox .linkBox{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.profileBox .txtBox .linkBox a{
+	width: calc(100%/2 - 2vw/2);
+	margin-top: 2vw;
+	height: 12vw;
+}
+
+.profileBox .txtBox .linkBox a img{
+	width: auto;
+	height: 5vw;
+}
+
+.profileBox .txtBox .linkBox a:last-child img{
+	height: 4vw;
+}
+
+.profileBox .txtBox .linkBox a span{
+	font-size: 2.5vw;
+}
+
+/* bbsBox */
+.bbsBox .inner{
+	flex-wrap: wrap;
+}
+
+.bbsBox .inner article{
+	width: 100%;
+	margin-top: 12vw;
+}
+
+.bbsBox .inner article:first-child{
+	margin-top: 0;
+}
+
+.bbsBox .inner article h3{
+	font-size: 4vw;
+	height: 12vw;
+	line-height: 12vw;
+}
+
+.bbsBox .inner article h3 .circle{
+	width: 6vw;
+	height: 6vw;
+}
+
+.bbsBox .inner article ul li a{
+	display: flex;
+	padding: 3vw 0;
+}
+
+.bbsBox .inner article ul li .bbsTit{
+	width: calc(100% - 14vw);
+	font-size: 3vw;
+}
+
+.bbsBox .inner article ul li .bbsDate{
+	width: 14vw;
+	font-size: 2.5vw;
+}
+
+/* recomBox */
+.recomBox{
+	background: url(../img/recomBg.jpg) no-repeat center / cover;
+}
+
+.recomBox .slideUl{
+	margin: 0 -2vw;
+	margin-bottom: 7vw;
+}
+
+.recomBox .slideLi{
+	margin: 0 2vw;
+}
+
+.recomBox .slideLi .recomIcon{
+	top: 1vw;
+	left: 1vw;
+	width: 8vw;
+}
+
+.recomBox .slideLi .recomIcon img{
+	width: 100%;
+}
+
+.recomBox .slideLi .txtBox{
+	padding: 3vw;
+}
+
+.recomBox .slideLi .txtBox h3{
+	font-size: 3.5vw;
+}
+
+.recomBox .slideLi .txtBox h4{
+	font-size: 2.5vw;
+	margin: 2vw 0 3vw;
+}
+
+.recomBox .slideLi .txtBox ul{
+
+}
+
+.recomBox .slideLi .txtBox ul li h5{
+	width: 10vw;
+	height: 5vw;
+	line-height: 5vw;
+	font-size: 2.5vw;
+	margin-right: 1vw;
+}
+
+.recomBox .slideLi .txtBox ul li p{
+	font-size: 2.5vw;
+}
+
+.recomBox .slideLi .txtBox ul li p strong{
+	font-size: 1.2em;
+}
+
+.recomBox .slick-dots{
+	bottom: -7vw;
+}
+
+.recomBox .slick-dots li{
+	width: 5vw;
+	height: 4px;
+	background: #dcdcdc;
+	position: relative;
+	margin: 0 1vw;
+	transition: all 0.3s;
+}
+
+/* planBox */
+.planBox article{
+	overflow-x: auto;
+	padding-bottom: 5vw;
+}
+
+.planBox article::-webkit-scrollbar {
+	height: 4px;
+	border-radius: 100px;
+}
+
+.planBox article::-webkit-scrollbar-thumb {
+    background-color: var(--mainCol);
+	border-radius: 100px;
+}
+
+.planBox article::-webkit-scrollbar-track {
+    background-color: #e7e7e8;
+}
+
+.planBox table{
+	width: 150vw;
+}
+
+.planBox th{
+	font-size: 3vw;
+	background: #f7f7f7;
+	padding: 2vw 1vw;
+}
+
+.planBox td{
+	padding: 2vw 1vw;
+	font-size: 2.5vw;
+}
+
+/* bookBox */
+.bookBox .slideUl{
+	margin: 0 -2vw;
+	margin-bottom: 7vw;
+}
+
+.bookBox .slideLi{
+	margin: 0 2vw;
+}
+
+.bookBox .slideLi .recomIcon{
+	top: 1vw;
+	left: 1vw;
+}
+
+.bookBox .slideLi .imgBox{
+	margin-bottom: 3vw;
+}
+
+.bookBox .slideLi .txtBox h3{
+	font-size: 3vw;
+	margin-bottom: 10px;
+}
+
+.bookBox .slideLi .txtBox .price{
+	font-size: 2.5vw;
+}
+
+.bookBox .slideLi .txtBox .price .center{
+	font-size: 8px;
+	margin: 0 1vw;
+}
+
+.bookBox .slick-dots{
+	bottom: -7vw;
+}
+
+.bookBox .slick-dots li{
+	width: 5vw;
+	height: 4px;
+	background: #dcdcdc;
+	position: relative;
+	margin: 0 1vw;
+	transition: all 0.3s;
+}
+
+.bookBox .slick-dots li.slick-active{
+	background: var(--pCol);
+}
+
+.bookBox .slick-dots li button{
+	opacity: 0 !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* reviewBox */
+.reviewBox article .inBox{
+	padding: 5vw 5%;
+	text-align: center;
+	margin-bottom: 3vw;
+	border-radius: 4vw;
+}
+
+.reviewBox article .inBox:last-child{
+	margin-bottom: 0;
+}
+
+.reviewBox article .inBox .reviewer{
+	max-width: 86px;
+	width: 15%;
+	margin: auto;
+	font-size: 16px;
+}
+
+.reviewBox article .inBox .subject{
+	font-size: 3.5vw;
+	line-height: 1.3;
+	margin: 2vw 0;
+}
+
+.reviewBox article .inBox p{
+	font-size: 2.5vw;
+}
+
+.reviewBox article .inBox p br{
+	display: none;
+}
+
+
+
+
+
+}
+/* ----------------------------------------------------------------------------------//responsive 1000px */

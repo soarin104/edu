@@ -1,0 +1,162 @@
+/*  */
+.lnb ul li:nth-child(1) a{
+	font-weight: 600;
+	color: var(--pCol);
+}
+
+
+/* css */
+.logBox{
+	background: #f8f9fa;
+	max-width: 650px;
+	border-radius: 30px;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 80px 100px;
+}
+
+.logBox .logLogo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.logBox ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.logBox ul li label{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.logBox ul li input{
+	border: 1px solid #ccc;
+	background: #fff;
+	box-sizing: border-box;
+	height: 40px;
+	width: 250px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.logBox .loginBtn{
+	background: var(--pCol);
+	color: #fff;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 10px;
+	text-align: center;
+	max-width: 300px;
+	width: 90%;
+	margin: 50px auto 20px;
+	display: block;
+	font-size: 18px;
+	border: 0;
+	cursor: pointer;
+	font-weight: 500 !important; 
+}
+
+.logBox .logMenu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logBox .logMenu a{
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 10px;
+	position: relative;
+	color: #333;
+	line-height: 1;
+}
+
+.logBox .logMenu a:hover{
+	text-decoration: underline;
+}
+
+.logBox .logMenu a:last-child{
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.logBox .logMenu a::after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 14px;
+	position: absolute;
+	top: 55%;
+	right: 0;
+	transform: translate(0,-50%);
+	background: #666;
+}
+
+.logBox .logMenu a:last-child::after{
+	display: none;
+}
+
+/* ---------------------------------------------------------------------------------- responsive 1000px */
+@media screen and (max-width: 1000px){
+
+/* css */
+.logBox{
+	border-radius: 4vw;
+	padding: 8vw 17%;
+}
+
+.logBox .logLogo{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 8vw;
+	width: 10vw;
+}
+
+.logBox .logLogo img{
+	width: 100%;
+}
+
+.logBox ul li{
+	margin-bottom: 10px;
+}
+
+.logBox ul li label{
+	font-size: 3vw;
+	width: 30%;
+}
+
+.logBox ul li input{
+	height: 8vw;
+	width: 70%;
+	padding-left: 10px;
+}
+
+.logBox .loginBtn{
+	background: var(--pCol);
+	color: #fff;
+	height: 10vw;
+	line-height: 10vw;
+	border-radius: 3vw;
+	margin: 5vw auto 3vw;
+	font-size: 3.5vw;
+}
+
+.logBox .logMenu a{
+	line-height: 1;
+	font-size: 2.5vw;
+}
+
+.logBox .logMenu a::after{
+	width: 1px;
+	height: 2vw;
+	top: 55%;
+	right: 0;
+	transform: translate(0,-50%);
+}
+
+
+}
